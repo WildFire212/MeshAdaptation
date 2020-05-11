@@ -1,0 +1,4 @@
+﻿E:\Visual Studio Community 2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+E:\Visual Studio Community 2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Source.cpp
+  MeshAdaptation.vcxproj -> E:\Visual Studio 2019\Projects\MeshAdaptation\\bin\Debug-Windows-x64\MeshAdaptation.exe

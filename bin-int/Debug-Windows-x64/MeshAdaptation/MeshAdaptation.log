@@ -1,0 +1,29 @@
+﻿E:\Visual Studio Community 2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+E:\Visual Studio Community 2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Buffer.cpp
+  Image.cpp
+  IndexBuffer.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Buffers\IndexBuffer.cpp(6,32): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  VertexBuffer.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Buffers\VertexBuffer.cpp(8,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  MeshAdapter.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Deformation\MeshAdapter.cpp(9,29): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Deformation\MeshAdapter.cpp(21,29): warning C4018: '<': signed/unsigned mismatch
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Deformation\MeshAdapter.cpp(87,44): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Mesh.cpp
+  Model.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\MeshLoader\Model.cpp(87,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  VulkanSetup.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(737,119): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(843,36): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(844,37): warning C4244: '=': conversion from 'uint32_t' to 'float', possible loss of data
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(1304,78): warning C4267: 'initializing': conversion from 'size_t' to 'uint32_t', possible loss of data
+  Source.cpp
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Source.cpp(19,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Texture.cpp
+  Generating Code...
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(742): warning C4715: 'VulkanSetup::chooseSupportedFormat': not all control paths return a value
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Setup\VulkanSetup.cpp(1187): warning C4715: 'VulkanSetup::createRenderPass': not all control paths return a value
+E:\Visual Studio 2019\Projects\MeshAdaptation\MeshAdaptation\Buffers\Buffer.cpp(62): warning C4715: 'Buffer::findMemoryTypeIndex': not all control paths return a value
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  MeshAdaptation.vcxproj -> E:\Visual Studio 2019\Projects\MeshAdaptation\\bin\Debug-Windows-x64\MeshAdaptation\MeshAdaptation.exe
