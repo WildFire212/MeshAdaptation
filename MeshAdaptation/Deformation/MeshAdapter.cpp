@@ -91,10 +91,13 @@ void RBFValues::calculatePhiMatrix(std::vector<glm::vec3> controlPointPositions)
 			float dz = controlPointPositions[i].z - controlPointPositions[j].z;
 
 			float squaredDisplacements = dx * dx + dy * dy + dz * dz;
-
-			phiMatrix(i, j) = phi(squaredDisplacements);
+			
+			phiMatrix(i, j) = phi(sqrt(squaredDisplacements));
 		}
 	}
+	for (unsigned int i = m_PhiMatrixSize; i < m_PhiMatrixSize + 4; i++)
+		for (unsigned int j = m_PhiMatrixSize; j < m_PhiMatrixSize + 4; j++)
+			phiMatrix(i, j) = 0;
 	for (unsigned int i = 0; i < m_PhiMatrixSize; i++)
 	{
 		phiMatrix(i, m_PhiMatrixSize + 0) = 1;
@@ -111,9 +114,6 @@ void RBFValues::calculatePhiMatrix(std::vector<glm::vec3> controlPointPositions)
 		phiMatrix(m_PhiMatrixSize + 3, j) = controlPointPositions[j].z;
 	}
 
-	for (unsigned int i = m_PhiMatrixSize; i < m_PhiMatrixSize + 4; i++)
-		for (unsigned int j = m_PhiMatrixSize; j < m_PhiMatrixSize + 4; j++)
-			phiMatrix(i, j) = 0;
 
 
 	//Phi Matrix Calculation
@@ -133,7 +133,7 @@ float RBFValues::calculateInterpolantValue(glm::vec3 oldPos , std::vector<glm::v
 
 		float distanceSquared = dx * dx + dy * dy + dz * dz;
 			
-		sum += m_Lamdas(i) * phi(distanceSquared);
+		sum += m_Lamdas(i) * phi(sqrt(distanceSquared));
 	}
 
 	//Interpolated value between the src and dest using RBF
@@ -162,7 +162,7 @@ void RBFValues::updateLambdas(std::vector<float> displacementArray)
 
 float RBFValues::phi(float squareDisplacements)
 {
-	return sqrt(log10(squareDisplacements + 1.0f));
+	return (log10(squareDisplacements + 1.0f));
 }
 
 	
