@@ -18,7 +18,7 @@ struct RBFValues
 class MeshAdapter
 {
 private: 
-	const int m_NumControlPoints = 31 ; 
+	const int m_NumControlPoints = 36 ; 
 	float m_MorphTime = 0.0f;
 
 	Model* m_SrcMesh; 
@@ -34,7 +34,7 @@ private:
 	std::vector<float> m_ControlPointDisplacementY;	
 	std::vector<float> m_ControlPointDisplacementZ;	
 public: 
-	MeshAdapter(Model* srcModel,Model* srcModelDeformed, Model* destModel, const int srcControlPoints[24], const int destControlPoints[24]);
+	MeshAdapter(Model* srcModel,Model* srcModelDeformed, Model* destModel, const int srcControlPoints[36], const int destControlPoints[36]);
 	~MeshAdapter(); 
 	void update(); 
 	void deformMesh(); 

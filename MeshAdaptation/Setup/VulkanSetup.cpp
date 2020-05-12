@@ -2,7 +2,7 @@
 #include "Setup/VulkanSetup.h"
 #include"TextureLoaders/Texture.h"
 const int MAX_FRAME_DRAWS = 2;
-const int MAX_OBJECTS = 100;
+const int MAX_OBJECTS = 6;
 VkPhysicalDevice VulkanSetup::m_PhysicalDevice = VK_NULL_HANDLE;
 VkDevice VulkanSetup::m_LogicalDevice;
 VkQueue VulkanSetup::m_GraphicsQueue;
@@ -64,7 +64,7 @@ void VulkanSetup::init()
 		Mesh* mesh1 = new Mesh(&meshVertices1, &indices, giraffe);
 		m_Meshes.push_back(mesh1);
 
-		const int SourceModelControlPoints[31] = {
+		const int SourceModelControlPoints[36] = {
 				1699 ,
 				1584 ,
 				929	 ,
@@ -73,22 +73,27 @@ void VulkanSetup::init()
 				509	 ,
 				1747 ,
 				1749 ,
-				1807 ,
-				1825 ,
+				1808 ,
+				1826 ,
 				1099 ,
-				1089 ,
-				1048 ,
+				1093 ,
+				1052 ,
 				1119 ,
 				825	 ,
 				55	 ,
-				1615 ,
+				1624 ,
+				1456 ,
+				772	 ,
+				270	 ,
 				742	 ,
+				2352 ,
 				265	 ,
+				2279 ,
 				1401 ,
-				2085 ,
-				2206 ,
-				1347 ,
-				2132 ,
+				2108 ,
+				2182 ,
+				1352 ,
+				2136 ,
 				682	 ,
 				644	 ,
 				2030 ,
@@ -96,33 +101,41 @@ void VulkanSetup::init()
 				1972 ,
 				593	 ,
 				29
+
+
 		};
 
-		const int KinectModelControlPoints[31]{
-				68853	,	
+		const int KinectModelControlPoints[36]{
+				68853	,
 				95226	,
 				63054	,
 				211158	,
 				324466	,
 				203469	,
-				43249	,
-				37899	,
-				63276	,
-				9516	,
-				33331	,
-				241095	,
-				48687	,
-				296163	,
-				15636	,
-				16575	,
-				3		,
-				145557	,
-				115363	,
-				300		,
-				88044	,
-				115819	,
-				17940	,
-				116297	,
+
+				43249	 ,
+				37904	 ,
+				274413	 ,
+				9516	 ,
+				33331	 ,
+				241095	 ,
+				167775	 ,
+				296163	 ,
+				15612	 ,
+				4497	 ,
+				33222	 ,
+				174192	 ,
+				86805	 ,
+				29431	 ,
+				33805	 ,
+				234		 ,
+				115307	 ,
+				115311	 ,
+				314		 ,
+				30555	 ,
+				116109	 ,
+				235893	 ,
+				116297	 ,
 				16266	,
 				10849	,
 				31077	,

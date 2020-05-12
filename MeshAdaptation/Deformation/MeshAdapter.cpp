@@ -1,7 +1,7 @@
 #include "MeshAdapter.h"
 
 
-MeshAdapter::MeshAdapter(Model* srcModel,Model* srcModelDeformed, Model* destModel, const int srcControlPoints[31], const int destControlPoints[31]) :
+MeshAdapter::MeshAdapter(Model* srcModel,Model* srcModelDeformed, Model* destModel, const int srcControlPoints[36], const int destControlPoints[36]) :
 	m_SrcMesh(srcModel),
 	m_SrcMeshDeformed(srcModelDeformed), 
 	m_DstMesh(destModel)
@@ -95,8 +95,8 @@ void RBFValues::calculatePhiMatrix(std::vector<glm::vec3> controlPointPositions)
 			phiMatrix(i, j) = phi(sqrt(squaredDisplacements));
 		}
 	}
-	for (unsigned int i = m_PhiMatrixSize; i < m_PhiMatrixSize + 4; i++)
-		for (unsigned int j = m_PhiMatrixSize; j < m_PhiMatrixSize + 4; j++)
+	for (unsigned int i = m_PhiMatrixSize; i < m_PhiMatrixSize + 4 ; i++)
+		for (unsigned int j = m_PhiMatrixSize; j < m_PhiMatrixSize  + 4; j++)
 			phiMatrix(i, j) = 0;
 	for (unsigned int i = 0; i < m_PhiMatrixSize; i++)
 	{
@@ -141,13 +141,13 @@ float RBFValues::calculateInterpolantValue(glm::vec3 oldPos , std::vector<glm::v
 			m_Lamdas(m_PhiMatrixSize + 1) * oldPos.x +
 			m_Lamdas(m_PhiMatrixSize + 2) * oldPos.y +
 			m_Lamdas(m_PhiMatrixSize + 3) * oldPos.z;
-
+	
 	return sum;
 }
 
 void RBFValues::updateLambdas(std::vector<float> displacementArray)
 {
-	Eigen::VectorXf Fis(m_PhiMatrixSize + 4);
+	Eigen::VectorXf Fis(m_PhiMatrixSize  + 4);
 
 	for (unsigned int i = 0; i < m_PhiMatrixSize; i++)
 		Fis(i) = displacementArray[i];
