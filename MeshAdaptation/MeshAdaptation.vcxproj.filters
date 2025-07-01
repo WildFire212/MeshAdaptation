@@ -15,75 +15,75 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="src\Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Setup\VulkanSetup.cpp">
+    <ClCompile Include="src\Setup\VulkanSetup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Setup\Window.cpp">
+    <ClCompile Include="src\Setup\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Lights\DirectionalLight.cpp">
+    <ClCompile Include="src\Lights\DirectionalLight.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buffers\Image.cpp">
+    <ClCompile Include="src\Buffers\Image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buffers\Buffer.cpp">
+    <ClCompile Include="src\Buffers\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buffers\IndexBuffer.cpp">
+    <ClCompile Include="src\Buffers\IndexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Buffers\VertexBuffer.cpp">
+    <ClCompile Include="src\Buffers\VertexBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MeshLoader\Mesh.cpp">
+    <ClCompile Include="src\MeshLoader\Mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MeshLoader\Model.cpp">
+    <ClCompile Include="src\MeshLoader\Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Deformation\MeshAdapter.cpp">
+    <ClCompile Include="src\Deformation\MeshAdapter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TextureLoaders\Texture.cpp">
+    <ClCompile Include="src\TextureLoaders\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Setup\VulkanSetup.h">
+    <ClInclude Include="src\Setup\VulkanSetup.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Setup\Window.h">
+    <ClInclude Include="src\Setup\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Lights\DirectionalLight.h">
+    <ClInclude Include="src\Lights\DirectionalLight.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buffers\Image.h">
+    <ClInclude Include="src\Buffers\Image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buffers\Buffer.h">
+    <ClInclude Include="src\Buffers\Buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buffers\IndexBuffer.h">
+    <ClInclude Include="src\Buffers\IndexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Buffers\VertexBuffer.h">
+    <ClInclude Include="src\Buffers\VertexBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MeshLoader\Mesh.h">
+    <ClInclude Include="src\MeshLoader\Mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MeshLoader\Model.h">
+    <ClInclude Include="src\MeshLoader\Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Deformation\MeshAdapter.h">
+    <ClInclude Include="src\Deformation\MeshAdapter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextureLoaders\Texture.h">
+    <ClInclude Include="src\TextureLoaders\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

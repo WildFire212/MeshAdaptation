@@ -1,0 +1,12 @@
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Buffers\Buffer.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Buffer.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Buffers\IndexBuffer.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\IndexBuffer.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Buffers\VertexBuffer.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\VertexBuffer.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Lights\DirectionalLight.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\DirectionalLight.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Buffers\Image.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Image.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\MeshLoader\Mesh.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Mesh.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Deformation\MeshAdapter.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\MeshAdapter.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\MeshLoader\Model.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Model.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Setup\Window.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Window.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Source.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Source.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\Setup\VulkanSetup.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\VulkanSetup.obj
+C:\PersProjects\MeshAdaptation\MeshAdaptation\src\TextureLoaders\Texture.cpp;C:\PersProjects\MeshAdaptation\bin-int\Debug-Windows-x64\MeshAdaptation\Texture.obj
